@@ -1,23 +1,22 @@
-import React from "react";
 import "./App.css";
 import Weather from "./Weather";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello!</h1>
-        <Weather city="Kyiv" />
-        <a
-          href="https://www.shecodes.io/learn/workshops/1209/units/74/lessons/293"
-          target="blank"
-          rel="noreferrer"
-        >
-          SheCodes
-        </a>
-      </header>
+      <div className="container">
+        <Weather defaultCity="New York" />
+        <footer>
+          Please check my open source code {""}
+          <a
+            href="https://github.com/Tasha-berezhko/react-weater-project-app"
+            target="_blank"
+          >
+            {" "}
+            here
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
